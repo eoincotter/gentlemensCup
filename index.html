@@ -1,0 +1,166 @@
+<html> 
+  <head>
+    <title>Gentlemen's Cup</title> 
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+      <h1>Score Entry</h1>
+      <form id = 'player-name-confirmation' name = 'player-name-confirmation'>
+        <label for="names">Name:</label>
+        <select name="names" id="names">
+          <option value="Eoin Cotter">Eoin Cotter</option>
+          <option value="Conall Hunt">Conall Hunt</option>
+        </select>
+        <br><br>
+        <input class="button" type="button" value="Confirm" onclick="processName(); return false" />
+      </form>
+      <div id = "player-details">
+        <p id = "player-name">Name: </p>
+        <p  id = "player-handicap">Handicap: </p>
+      </div>
+      <br>
+<div id="glenmill-scorecard-entry">
+<article class="front9">
+    <div class="hole">
+        <span>Hole</span>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>Out</span>
+    </div>
+    <div class="par">
+        <span>Index</span>
+        <span>7</span>
+        <span>5</span>
+        <span>15</span>
+        <span>11</span>
+        <span>13</span>
+        <span>17</span>
+        <span>9</span>
+        <span>1</span>
+        <span>3</span>
+        <span></span>
+    </div>
+    <div class="par">
+        <span>Par</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>27</span>
+    </div>
+    <div class="score">
+        <span>Score</span>
+        <span><form name="score-input-1"><input type="text" id="1" name="score"></form></span>
+        <span><form name="score-input-2"><input type="text" id="2" name="score"></form></span>
+        <span><form name="score-input-3"><input type="text" id="3" name="score"></form></span>
+        <span><form name="score-input-4"><input type="text" id="4" name="score"></form></span>
+        <span><form name="score-input-5"><input type="text" id="5" name="score"></form></span>
+        <span><form name="score-input-6"><input type="text" id="6" name="score"></form></span>
+        <span><form name="score-input-7"><input type="text" id="7" name="score"></form></span>
+        <span><form name="score-input-8"><input type="text" id="8" name="score"></form></span>
+        <span><form name="score-input-9"><input type="text" id="9" name="score"></form></span>
+        <span class="sub" id="front-9-total">0</span>
+    </div>
+    <!-- <div class="par">
+        <span>Points</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span class="sub" id="front-9-points-total">0</span>
+    </div> -->
+</article>
+<article class="back9">
+    <div class="hole">
+        <span>Back</span>
+        <span>10</span>
+        <span>11</span>
+        <span>12</span>
+        <span>13</span>
+        <span>14</span>
+        <span>15</span>
+        <span>16</span>
+        <span>17</span>
+        <span>18</span>
+        <span>In</span>
+        <span>Total</span>
+    </div>
+    <div class="par">
+        <span>Index</span>
+        <span>2</span>
+        <span>4</span>
+        <span>18</span>
+        <span>10</span>
+        <span>12</span>
+        <span>16</span>
+        <span>14</span>
+        <span>8</span>
+        <span>6</span>
+        <span></span>
+    </div>
+    <div class="par">
+        <span>Par</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>27</span>
+		<span>54</span>
+    </div>
+    <div class="score">
+        <span>Score</span>
+        <span><form name="score-input-10"><input type="text" id="10" name="score"></form></span>
+        <span><form name="score-input-11"><input type="text" id="11" name="score"></form></span>
+        <span><form name="score-input-12"><input type="text" id="12" name="score"></form></span>
+        <span><form name="score-input-13"><input type="text" id="13" name="score"></form></span>
+        <span><form name="score-input-14"><input type="text" id="14" name="score"></form></span>
+        <span><form name="score-input-15"><input type="text" id="15" name="score"></form></span>
+        <span><form name="score-input-16"><input type="text" id="16" name="score"></form></span>
+        <span><form name="score-input-17"><input type="text" id="17" name="score"></form></span>
+        <span><form name="score-input-18"><input type="text" id="18" name="score"></form></span>
+        <span class="sub" id="back-9-total">0</span>
+        <span class="total" id="18-total">0</span>
+    </div>
+    <!-- <div class="par">
+        <span>Points</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span>0</span>
+        <span class="sub" id="back-9-points-total">0</span>
+        <span class="sub" id="18-points-total">0</span>
+    </div> -->
+</article>
+<br/>
+<input class="button" id="score-submission-button" type="button" value="Submit Score" onclick="calculateTotals(); return false" />
+<p id = "score-submission-message">Nice score! Submit another score <a href="index.html">here</a></p>
+</div>
+</body>
