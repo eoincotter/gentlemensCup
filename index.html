@@ -13,14 +13,21 @@
           <option value="Conall Hunt">Conall Hunt</option>
         </select>
         <br><br>
+        <label for="names">Course:</label>
+        <select name="courses" id="courses">
+          <option value="Glen Mill">Glen Mill</option>
+          <option value="Leopardstown">Leopardstown</option>
+        </select>
+        <br><br>
         <input class="button" type="button" value="Confirm" onclick="processName(); return false" />
       </form>
       <div id = "player-details">
         <p id = "player-name">Name: </p>
-        <p  id = "player-handicap">Handicap: </p>
+        <p id = "player-handicap">Handicap: </p>
+        <p id = "course-name">Course: </p>
       </div>
       <br>
-<div id="glenmill-scorecard-entry">
+<div id="scorecard-entry">
 <article class="front9">
     <div class="hole">
         <span>Hole</span>
@@ -37,29 +44,29 @@
     </div>
     <div class="par">
         <span>Index</span>
-        <span>7</span>
-        <span>5</span>
-        <span>15</span>
-        <span>11</span>
-        <span>13</span>
-        <span>17</span>
-        <span>9</span>
-        <span>1</span>
-        <span>3</span>
+        <span id = 'index-1'>0</span>
+        <span id = 'index-2'>0</span>
+        <span id = 'index-3'>0</span>
+        <span id = 'index-4'>0</span>
+        <span id = 'index-5'>0</span>
+        <span id = 'index-6'>0</span>
+        <span id = 'index-7'>0</span>
+        <span id = 'index-8'>0</span>
+        <span id = 'index-9'>0</span>
         <span></span>
     </div>
     <div class="par">
         <span>Par</span>
-        <span>3</span>
-        <span>3</span>
-        <span>3</span>
-        <span>3</span>
-        <span>3</span>
-        <span>3</span>
-        <span>3</span>
-        <span>3</span>
-        <span>3</span>
-        <span>27</span>
+        <span id = 'par-1'>0</span>
+        <span id = 'par-2'>0</span>
+        <span id = 'par-3'>0</span>
+        <span id = 'par-4'>0</span>
+        <span id = 'par-5'>0</span>
+        <span id = 'par-6'>0</span>
+        <span id = 'par-7'>0</span>
+        <span id = 'par-8'>0</span>
+        <span id = 'par-9'>0</span>
+        <span id = 'front-9-par'>0</span>
     </div>
     <div class="score">
         <span>Score</span>
@@ -105,30 +112,30 @@
     </div>
     <div class="par">
         <span>Index</span>
-        <span>2</span>
-        <span>4</span>
-        <span>18</span>
-        <span>10</span>
-        <span>12</span>
-        <span>16</span>
-        <span>14</span>
-        <span>8</span>
-        <span>6</span>
+        <span id = 'index-10'>0</span>
+        <span id = 'index-11'>0</span>
+        <span id = 'index-12'>0</span>
+        <span id = 'index-13'>0</span>
+        <span id = 'index-14'>0</span>
+        <span id = 'index-15'>0</span>
+        <span id = 'index-16'>0</span>
+        <span id = 'index-17'>0</span>
+        <span id = 'index-18'>0</span>
         <span></span>
     </div>
     <div class="par">
         <span>Par</span>
-        <span>3</span>
-        <span>3</span>
-        <span>3</span>
-        <span>3</span>
-        <span>3</span>
-        <span>3</span>
-        <span>3</span>
-        <span>3</span>
-        <span>3</span>
-        <span>27</span>
-		<span>54</span>
+        <span id = 'par-10'>0</span>
+        <span id = 'par-11'>0</span>
+        <span id = 'par-12'>0</span>
+        <span id = 'par-13'>0</span>
+        <span id = 'par-14'>0</span>
+        <span id = 'par-15'>0</span>
+        <span id = 'par-16'>0</span>
+        <span id = 'par-17'>0</span>
+        <span id = 'par-18'>0</span>
+        <span id = 'back-9-par'>0</span>
+        <span id = 'total-par'>0</span>
     </div>
     <div class="score">
         <span>Score</span>
