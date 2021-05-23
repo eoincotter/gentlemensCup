@@ -57,6 +57,7 @@ function calculateTotals() {
   
   document.getElementById("score-submission-button").style.display = "none";
   document.getElementById("score-submission-message").style.display = "block";
+  document.getElementById("another-score-submission-button").style.display = "block";
   document.getElementById("front-9-total").innerHTML = `${front9Score}`;
   document.getElementById("back-9-total").innerHTML = `${back9Score}`;
   document.getElementById("18-total").innerHTML = `${totalScore}`;
@@ -91,8 +92,6 @@ function calculateTotals() {
 }
 
 function calculatePoints(scores) {
-  //var pars = `${courseData[`${courseName}`]['par']}`;  // access?
-  //var indices = `${courseData[`${courseName}`]['index']}`;  // access?
   var nettScores = [];
   for (var i = 0; i < 18; i++) {
     if (playerHandicap >= courseData[`${courseName}`]['index'][i] + 36) {
@@ -108,6 +107,7 @@ function calculatePoints(scores) {
   
   var points = [];
   for (var i = 0; i < 18; i++) {
+    // should use switch for this
     if ((nettScores[i] - courseData[`${courseName}`]['par'][i]) == -4) {
       points[points.length] = 6;
     } else if ((nettScores[i] - courseData[`${courseName}`]['par'][i]) == -3) {

@@ -2,18 +2,32 @@
   <head>
     <title>Gentlemen's Cup</title> 
     <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap" rel="stylesheet">  
     <script src="script.js" defer></script>
   </head>
   <body>
+      <header>
+        <h1><a href='index.html'>The Gentlemen's Cup 2021</a></h1>
+        <nav>
+            <ul>
+              <li><a href="">Leaderboard</a></li>
+              <li><a href="">Score Entry</a></li>
+              <li><a href="">Player Profiles</a></li>
+              <li><a href="">Gallery</a></li>
+            </ul>
+          </nav>
+      </header>
+      <main>
       <h1>Score Entry</h1>
       <form id = 'player-name-confirmation' name = 'player-name-confirmation'>
-        <label for="names">Name:</label>
+        <label for="names">Select name:</label>
         <select name="names" id="names">
           <option value="Eoin Cotter">Eoin Cotter</option>
           <option value="Conall Hunt">Conall Hunt</option>
         </select>
         <br><br>
-        <label for="names">Course:</label>
+        <label for="names">Select course:</label>
         <select name="courses" id="courses">
           <option value="Glen Mill">Glen Mill</option>
           <option value="Leopardstown">Leopardstown</option>
@@ -135,6 +149,7 @@
         <span id = 'index-17'>0</span>
         <span id = 'index-18'>0</span>
         <span></span>
+        <span></span>
     </div>
     <div class="par">
         <span>Par</span>
@@ -195,6 +210,9 @@
 </article>
 <br/>
 <input class="button" id="score-submission-button" type="button" value="Submit Score" onclick="calculateTotals(); return false" />
-<p id = "score-submission-message">Nice score! Submit another score <a href="index.html">here</a></p>
+<p id = "score-submission-message">Nice score!</p>
+<br/>
+<a id = "another-score-submission-button" class="button-link" href="index.html">Submit another score</a>
 </div>
+</main>
 </body>

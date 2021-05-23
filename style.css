@@ -1,3 +1,116 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+  }
+
+body {
+    font-family: 'KoHo', sans-serif;
+  }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+  /* Header */
+header {
+    /* position: fixed; */
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    /* box-shadow: 0 3px 3px grey;*/
+}
+
+header h1 {
+    background-color: #d4af37;
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+}
+
+header h1 a {
+    color: rgb(248, 242, 242);
+}
+
+/* Nav Bar */
+nav { 
+    height: 80px; 
+    width: 100%;
+    border-bottom: 1px solid #d4af37;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto; 
+    padding: 0;
+    position: absolute;
+    right: 5%;
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }  
+  
+nav ul li {
+    color: #fff;
+    display: inline-block; 
+    height: 76px;
+    line-height: 80px; 
+    list-style: none;
+    padding: 0 3%;
+    transition: background .5s; 
+}
+
+nav ul li:hover {
+    cursor: pointer; 
+    transition: background .5s;
+    border-bottom: 4px solid #d4af37;  
+}
+
+main{
+    text-align: center;
+}
+
+input{
+    font-family: 'KoHo', sans-serif;
+    width: 3em;
+    text-align: center;
+}
+
+input.button {
+    width: 10em;
+    background-color: #d4af37;
+    padding: 14px 30px 14px 30px;
+    border-radius: 55px;
+    border: none;
+    color: white;
+    font-family: 'KOHO';
+    font-size: 16px;
+}
+
+.button-link{
+    background-color: #d4af37;
+    padding: 14px 30px 14px 30px;
+    border-radius: 55px;
+    border: none;
+    color: white;
+    width: max-content;
+}
+
+input.button:hover {
+    cursor: pointer;
+}
+
+select {
+    font-family: 'KOHO';
+    font-size: 16px;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+
 #player-details {
     display: none;
 }
@@ -48,14 +161,12 @@
 form{
     margin-bottom: 0em;
 }
-input {
-    width: 3em;
-}
-input.button {
-    width: 10em;
-}
 
 #score-submission-message{
+    display: none;
+}
+
+#another-score-submission-button{
     display: none;
 }
 
