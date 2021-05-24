@@ -11,208 +11,24 @@
         <h1><a href='index.html'>The Gentlemen's Cup 2021</a></h1>
         <nav>
             <ul>
-              <li><a href="">Leaderboard</a></li>
-              <li><a href="">Score Entry</a></li>
-              <li><a href="">Player Profiles</a></li>
-              <li><a href="">Gallery</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="tournaments.html">Tournaments</a></li>
+                <li><a href="score-entry.html">Score Entry</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                <li><a href="player-profiles.html">Player Profiles</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
           </nav>
       </header>
       <main>
-      <h1>Score Entry</h1>
-      <form id = 'player-name-confirmation' name = 'player-name-confirmation'>
-        <label for="names">Select name:</label>
-        <select name="names" id="names">
-          <option value="Eoin Cotter">Eoin Cotter</option>
-          <option value="Conall Hunt">Conall Hunt</option>
-        </select>
-        <br><br>
-        <label for="names">Select course:</label>
-        <select name="courses" id="courses">
-          <option value="Glen Mill">Glen Mill</option>
-          <option value="Leopardstown">Leopardstown</option>
-        </select>
-        <br><br>
-        <input class="button" type="button" value="Confirm" onclick="processName(); return false" />
-      </form>
-      <div id = "player-details">
-        <p id = "player-name">Name: </p>
-        <p id = "player-handicap">Handicap: </p>
-        <p id = "course-name">Course: </p>
-      </div>
-      <br>
-<div id="scorecard-entry">
-<article class="front9">
-    <div class="hole">
-        <span>Hole</span>
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>5</span>
-        <span>6</span>
-        <span>7</span>
-        <span>8</span>
-        <span>9</span>
-        <span>Out</span>
-    </div>
-    <div class="par">
-        <span>Index</span>
-        <span id = 'index-1'>0</span>
-        <span id = 'index-2'>0</span>
-        <span id = 'index-3'>0</span>
-        <span id = 'index-4'>0</span>
-        <span id = 'index-5'>0</span>
-        <span id = 'index-6'>0</span>
-        <span id = 'index-7'>0</span>
-        <span id = 'index-8'>0</span>
-        <span id = 'index-9'>0</span>
-        <span></span>
-    </div>
-    <div class="par">
-        <span>Par</span>
-        <span id = 'par-1'>0</span>
-        <span id = 'par-2'>0</span>
-        <span id = 'par-3'>0</span>
-        <span id = 'par-4'>0</span>
-        <span id = 'par-5'>0</span>
-        <span id = 'par-6'>0</span>
-        <span id = 'par-7'>0</span>
-        <span id = 'par-8'>0</span>
-        <span id = 'par-9'>0</span>
-        <span id = 'front-9-par'>0</span>
-    </div>
-    <div class="score-input">
-        <span>Score</span>
-        <span><form name="score-input-1"><input type="text" id="1" name="score"></form></span>
-        <span><form name="score-input-2"><input type="text" id="2" name="score"></form></span>
-        <span><form name="score-input-3"><input type="text" id="3" name="score"></form></span>
-        <span><form name="score-input-4"><input type="text" id="4" name="score"></form></span>
-        <span><form name="score-input-5"><input type="text" id="5" name="score"></form></span>
-        <span><form name="score-input-6"><input type="text" id="6" name="score"></form></span>
-        <span><form name="score-input-7"><input type="text" id="7" name="score"></form></span>
-        <span><form name="score-input-8"><input type="text" id="8" name="score"></form></span>
-        <span><form name="score-input-9"><input type="text" id="9" name="score"></form></span>
-        <span class="sub">0</span>
-    </div>
-    <div class="score-display">
-        <span>Score</span>
-        <span id = 'score-display-1'>0</span>
-        <span id = 'score-display-2'>0</span>
-        <span id = 'score-display-3'>0</span>
-        <span id = 'score-display-4'>0</span>
-        <span id = 'score-display-5'>0</span>
-        <span id = 'score-display-6'>0</span>
-        <span id = 'score-display-7'>0</span>
-        <span id = 'score-display-8'>0</span>
-        <span id = 'score-display-9'>0</span>
-        <span class="sub" id="front-9-total">0</span>
-    </div>
-    <div class="par">
-        <span>Points</span>
-        <span id = 'points-1'>0</span>
-        <span id = 'points-2'>0</span>
-        <span id = 'points-3'>0</span>
-        <span id = 'points-4'>0</span>
-        <span id = 'points-5'>0</span>
-        <span id = 'points-6'>0</span>
-        <span id = 'points-7'>0</span>
-        <span id = 'points-8'>0</span>
-        <span id = 'points-9'>0</span>
-        <span class="sub" id="front-9-points-total">0</span>
-    </div>
-</article>
-<article class="back9">
-    <div class="hole">
-        <span>Back</span>
-        <span>10</span>
-        <span>11</span>
-        <span>12</span>
-        <span>13</span>
-        <span>14</span>
-        <span>15</span>
-        <span>16</span>
-        <span>17</span>
-        <span>18</span>
-        <span>In</span>
-        <span>Total</span>
-    </div>
-    <div class="par">
-        <span>Index</span>
-        <span id = 'index-10'>0</span>
-        <span id = 'index-11'>0</span>
-        <span id = 'index-12'>0</span>
-        <span id = 'index-13'>0</span>
-        <span id = 'index-14'>0</span>
-        <span id = 'index-15'>0</span>
-        <span id = 'index-16'>0</span>
-        <span id = 'index-17'>0</span>
-        <span id = 'index-18'>0</span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="par">
-        <span>Par</span>
-        <span id = 'par-10'>0</span>
-        <span id = 'par-11'>0</span>
-        <span id = 'par-12'>0</span>
-        <span id = 'par-13'>0</span>
-        <span id = 'par-14'>0</span>
-        <span id = 'par-15'>0</span>
-        <span id = 'par-16'>0</span>
-        <span id = 'par-17'>0</span>
-        <span id = 'par-18'>0</span>
-        <span id = 'back-9-par'>0</span>
-        <span id = 'total-par'>0</span>
-    </div>
-    <div class="score-input">
-        <span>Score</span>
-        <span><form name="score-input-10"><input type="text" id="10" name="score"></form></span>
-        <span><form name="score-input-11"><input type="text" id="11" name="score"></form></span>
-        <span><form name="score-input-12"><input type="text" id="12" name="score"></form></span>
-        <span><form name="score-input-13"><input type="text" id="13" name="score"></form></span>
-        <span><form name="score-input-14"><input type="text" id="14" name="score"></form></span>
-        <span><form name="score-input-15"><input type="text" id="15" name="score"></form></span>
-        <span><form name="score-input-16"><input type="text" id="16" name="score"></form></span>
-        <span><form name="score-input-17"><input type="text" id="17" name="score"></form></span>
-        <span><form name="score-input-18"><input type="text" id="18" name="score"></form></span>
-        <span class="sub">0</span>
-        <span class="total">0</span>
-    </div>
-    <div class="score-display">
-        <span>Score</span>
-        <span id = 'score-display-10'>0</span>
-        <span id = 'score-display-11'>0</span>
-        <span id = 'score-display-12'>0</span>
-        <span id = 'score-display-13'>0</span>
-        <span id = 'score-display-14'>0</span>
-        <span id = 'score-display-15'>0</span>
-        <span id = 'score-display-16'>0</span>
-        <span id = 'score-display-17'>0</span>
-        <span id = 'score-display-18'>0</span>
-        <span class="sub" id="back-9-total">0</span>
-        <span class="total" id="18-total">0</span>
-    </div>
-    <div class="par">
-        <span>Points</span>
-        <span id = 'points-10'>0</span>
-        <span id = 'points-11'>0</span>
-        <span id = 'points-12'>0</span>
-        <span id = 'points-13'>0</span>
-        <span id = 'points-14'>0</span>
-        <span id = 'points-15'>0</span>
-        <span id = 'points-16'>0</span>
-        <span id = 'points-17'>0</span>
-        <span id = 'points-18'>0</span>
-        <span class="sub" id="back-9-points-total">0</span>
-        <span class="sub" id="18-points-total">0</span>
-    </div>
-</article>
-<br/>
-<input class="button" id="score-submission-button" type="button" value="Submit Score" onclick="calculateTotals(); return false" />
-<p id = "score-submission-message">Nice score!</p>
-<br/>
-<a id = "another-score-submission-button" class="button-link" href="index.html">Submit another score</a>
-</div>
-</main>
-</body>
+        <h1>Home Page</h1>
+        <h2>Page under construction</h2>
+        <h2>Select links above to view other pages</h2>
+      </main>
+      <footer>
+        <p>Past champions:</p>
+        <p>2021: TBC</p>
+        <p>2020: Conall Hunt</p>
+      </footer>
+  </body>
+</html>
