@@ -11,8 +11,8 @@ var courseData = {
   'Leopardstown' : {'par' : [3,4,3,4,4,4,4,5,4,4,4,4,3,4,3,4,3,4], 'index' : [7, 5, 15, 11, 13, 17, 9, 1, 3, 2, 4, 18, 10, 12, 16, 14, 8, 6]}
   };
 
-var playerHandicap = 0;
-var courseName = "placeholder";
+var playerHandicap = 0;  // probably bad practice
+var courseName = "placeholder"; // probably bad practice
 
 // when user confirms name and course before score entry
 function processName() {
@@ -44,7 +44,7 @@ function processName() {
 }
 
 // when user submits score, calculate front 9, back 9, full 18 totals, display totals on scorecard, 
-// hide submission button and display submission message
+// hide submission button and display submission message and new submission button
 function calculateTotals() {
   var scores = []
   for (i = 1; i < 19; i++) {
@@ -107,7 +107,7 @@ function calculatePoints(scores) {
   
   var points = [];
   for (var i = 0; i < 18; i++) {
-    // should use switch for this
+    // should use switch statement for this
     if ((nettScores[i] - courseData[`${courseName}`]['par'][i]) == -4) {
       points[points.length] = 6;
     } else if ((nettScores[i] - courseData[`${courseName}`]['par'][i]) == -3) {
