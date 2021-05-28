@@ -80,6 +80,11 @@ nav ul li:hover {
 
 main{
     text-align: center;
+    margin: 25px;
+}
+
+.text-page {
+    text-align: left;
 }
 
 input{
